@@ -1,0 +1,104 @@
+import java.util.Scanner;
+
+public class shior5 {
+    public static void f1() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter name: ");
+        String name = scan.next();
+        System.out.println("Hello " + name);
+    }
+
+    public static void f2(int number) {
+        System.out.println(number / 5);
+    }
+
+    public static int f3(int num1, int num2) {
+        return num1 * num2;
+    }
+
+    public static int f4(int num1, int num2, int num3) {
+        int x = num1 + num2 + num3;
+        System.out.println(x);
+        return x / 3;
+    }
+
+    public static void f5(double radius) {
+        double radius1 = Math.pow(radius, 2);
+        double area = 3.14 * radius1;
+        System.out.println("Area: " + area);
+        double circumference = 2 * 3.14 * radius;
+        System.out.println("Circumference: " + circumference);
+    }
+
+    public static int f6(int n1, int n2) {
+        double num1Squared = Math.pow(n1, 2);
+        double num2Squared = Math.pow(n2, 2);
+        return (int) (num1Squared + num2Squared);
+    }
+
+    public static void f7(String str1) {
+        System.out.println("" + str1.charAt(2) + str1.charAt(1) + str1.charAt(0));
+    }
+    public static int f8(int num1, int d, int n) {
+        int x = n - 1;
+        int y = d * x;
+        int z = y + num1;
+        return z;
+    }
+
+    public static double f9(String str1) {
+        int x = str1.length();
+        double y = Math.pow(x, 2);
+        return y;
+    }
+
+    public static int f10(String str1, String str2) {
+        int x = str1.length();
+        int y = str2.length();
+        if (x > y)
+            return x;
+        else
+            return y;
+    }
+
+    public static boolean f11(String str1, int num1) {
+        int x = str1.length();
+        return x == num1;
+    }
+
+    public static boolean f12() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter number 1 - 6: ");
+        int num1 = scan.nextInt();
+        System.out.println("Enter number 1 - 6: ");
+        int num2 = scan.nextInt();
+        return num1 == num2;
+    }
+
+    public static boolean f13(String str1){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter string: ");
+        String str = scan.next();
+        boolean x = str1.equals(str);
+        return x;
+    }
+
+    public static void main(String[] args) {
+        f1();
+        f2(15);
+        f3(2, 6);
+        f4(2, 6, 8);
+        f5(5);
+        f6(2, 3);
+        f7("Hel");
+        f8(2, 3, 4);
+        f9("Hal");
+        f10("Hello", "Hi");
+        f11("Hello", 5);
+        f12();
+        f13("a");
+    }
+}
+
+
+
