@@ -1,0 +1,206 @@
+
+import java.util.Scanner;
+public class shior3
+{
+ public static void main(String[] args)
+ {
+ Scanner scan=new Scanner(System.in);
+ System.out.println("Enter number1: ");
+ int num1 =scan.nextInt();
+
+   if (num1>0)
+     System.out.println(num1+ " is psotivie");
+   if (num1<0)
+     System.out.println(num1+ " is negative");
+  }
+}
+
+
+/*
+import java.util.Scanner;
+public class Main
+{
+ public static void main(String[] args)
+ {
+ Scanner scan=new Scanner(System.in);
+ System.out.println("Enter number1: ");
+ int num1 =scan.nextInt();
+ System.out.println("Enter number2: ");
+ int num2 =scan.nextInt();
+
+   if (num1>num2)
+     System.out.println(num2);
+   if (num1<num2)
+     System.out.println(num1);
+  }
+}
+*/
+
+
+/*
+import java.util.Scanner;
+public class Main
+{
+ public static void main(String[] args)
+ {
+ Scanner scan=new Scanner(System.in);
+ System.out.println("enter the letter of the first rider:");
+   String rider1=scan.next();
+System.out.println("enter the velocity of the first rider:");
+   int velocity1=scan.nextInt();
+System.out.println("enter the time of the first rider:");
+    int time1=scan.nextInt();
+ System.out.println("enter the letter of the second rider:");
+   String rider2=scan.next();
+System.out.println("enter the velocity of the second rider:");
+   int velocity2=scan.nextInt();
+System.out.println("enter the time of the second rider:");
+   int time2=scan.nextInt();
+
+int x = velocity1*time1;
+int y = velocity2*time2;
+
+   if (x>y)
+     System.out.println(rider1);
+   if (y>x)
+     System.out.println(rider2);
+ }
+}
+*/
+
+
+/*
+import java.util.Scanner;
+  public class Main
+  {
+   public static void main(String[] args)
+   {
+   Scanner scan=new Scanner(System.in);
+   System.out.println("enter your first grade");
+   int grade1=scan.nextInt();
+   System.out.println("enter your second grade");
+   int grade2=scan.nextInt();
+   System.out.println("enter your three grade");
+   int grade3=scan.nextInt();
+
+    int x=(grade1+grade2+grade3)/3;
+       System.out.println(x);
+   }
+  }
+*\
+
+
+/*
+import java.util.Scanner;
+public class Main
+{
+ public static void main(String[] args)
+ {
+ Scanner scan=new Scanner(System.in);
+   System.out.println("enter number1: ");
+      int num1=scan.nextInt();
+   System.out.println("enter number2: ");
+      int num2=scan.nextInt();
+   System.out.println("enter number3: ");
+      int num3=scan.nextInt();
+
+if (num1<num2 && num1<num3)
+  System.out.println(num1);
+if (num2<num1 && num2<num3)
+  System.out.println(num2);
+if (num3<num1 && num3<num2)
+ System.out.println(num3);
+ }
+}
+*/
+
+
+/*
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Enter n");
+          int n = scan.nextInt();
+        System.out.println("Enter dictance");
+          int d = scan.nextInt();
+        System.out.println("enter a");
+          int a = scan.nextInt();
+
+        int x = a+d*(n-1);
+      System.out.println(x);
+    }
+}
+*/
+
+
+/*
+import java.util.Scanner;
+public class Main
+{
+ public static void main(String[] args)
+ {
+ Scanner scan=new Scanner(System.in);
+   System.out.println("enter number of creative: ");
+      int num_creative =scan.nextInt();
+  double price= num_creative*1.2;
+  int x= num_creative%10;
+  int y= num_creative/10;
+
+if (num_creative<10)
+  System.out.println("price is: " + price);
+if (x>0 && num_creative<54 && num_creative>10)
+  System.out.println("price is: " + (1.2*x + num_creative-x));
+if (x==0 && num_creative<54)
+  System.out.println("price is: " + (y*10));
+if (num_creative>54)
+  System.out.println("price is: " + ((1.2*x) + (num_creative/54)*50));
+if (num_creative>49 && num_creative<55)
+  System.out.println("the price is: " + 50);
+if (num_creative>108)
+  System.out.println("you cant buy careative");
+ }
+}
+*/
+
+
+/*
+import java.util.Scanner;
+public class Main
+{
+ public static void main(String[] args)
+ {
+ Scanner scan=new Scanner(System.in);
+
+   System.out.println("enter your name: ");
+  String name=scan.next();
+    System.out.println("enter your school name: ");
+  String school=scan.next();
+    System.out.println("number of subjects you study: ");
+  int subjects=scan.nextInt();
+
+  System.out.println(" My name is " + name + " My school is " + school + " The number of subjects I study is " + subjects);
+ }
+}
+*/
+
+
+/*
+import java.util.Scanner;
+public class Main
+{
+ public static void main(String[] args)
+ {
+   Scanner scan=new Scanner(System.in);
+   System.out.println("enter a three digit number: ");
+  int num=scan.nextInt();
+   int hundred= num/100;
+   int yhidot= num%10;
+   int dozens= num/10%10;
+
+   System.out.println(dozens+yhidot+hundred);
+ }
+}
+*/
