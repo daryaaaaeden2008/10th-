@@ -1,0 +1,77 @@
+class shior2 {
+  public static void main(String[] args){
+    int x=4,y=5,z=6;
+    System.out.println (x);
+    System.out.println (y);
+    System.out.println (z);
+  }
+}
+
+
+/*
+class Main {
+  public static void main(String[] args) {
+    double x=1.5;
+    int y=1;
+       System.out.println(x+"   "+y);
+      }
+}
+*/
+
+/*
+class Main {
+  public static void main(String[] args) {
+    char v='d';
+    char b='a';
+    char c='r';
+    char s='y';
+    char h='a';
+    System.out.println(v+""+b+c+s+h);
+  }
+}
+*/
+
+/*
+class Main {
+  public static void main(String[] args) {
+    int x=5;
+    int y=7;
+    System.out.println(x +" is less than "+ y);
+  }
+}
+*/
+
+/*
+class Main {
+  public static void main(String[] args) {
+    int x=3;
+    int y=4;
+    int z=2;
+    int s= 3 + 4 + 2;
+    System.out.println("averages:" + (s/3));
+    }
+}
+*/
+
+/*
+class Main {
+  public static void main(String[] args) {
+    int a=3;
+    int b=4;
+    int x =a*a;
+    int y =b*b;
+    System.out.println("c=" + (x+y));
+  }
+}
+*/
+
+/*
+class Main {
+  public static void main(String[] args) {
+    int m=2;
+    int b=5;
+    int x=2;
+    System.out.println("y=" + (m*x+b));
+  }
+}
+*/
