@@ -1,7 +1,6 @@
 import java.util.Scanner;
-
-public class Main {
-  public static void f1() {
+public class shior6 {
+    public static void f1() {
         double sum = 0;
         Scanner scan = new Scanner(System.in);
         for (int i = 0; i < 5; i++) {
@@ -38,23 +37,23 @@ public class Main {
     }
 
     public static void f4(int num){
-      int x = 0;
-      for (int i = 0; i <= num; i++){
-        x+=1;
-      }
-      String z = String.valueOf(x);
-      int y = z.length();
-      {
-      System.out.println("The number of digits of the number" + y);
-      }
-}
-    public static int f5(int num){
-      int x = 0;
-      while (num > 0){
-        x+=num%10;
-        num = num/10;
+        int x = 0;
+        for (int i = 0; i <= num; i++){
+            x+=1;
         }
-      return x;
+        String z = String.valueOf(x);
+        int y = z.length();
+        {
+            System.out.println("The number of digits of the number is: " + y);
+        }
+    }
+    public static int f5(int num){
+        int x = 0;
+        while (num > 0){
+            x+=num%10;
+            num = num/10;
+        }
+        return x;
     }
 
     public static void f6(String str) {
@@ -82,7 +81,7 @@ public class Main {
                 System.out.print(j + ",");
             }
         }
-      System.out.println();
+        System.out.println();
     }
     public static void f8() {
         for (int i = 1; i < 11; i++) {
@@ -92,163 +91,195 @@ public class Main {
             }
         }
     }
-  public static void f9() {
-      int min = 100;
-      int max = 1;
-      Scanner scan = new Scanner(System.in);
-      for (int i = 1; i < 8; i++) {
-          System.out.println("Enter grade: ");
-          int grade = scan.nextInt();
-        if(grade > max)
-          max = grade;
-        if(grade < min)
-          min = grade;
-System.out.println("the highest grade is: " + max);
-System.out.println("the lowest grade is: " + min);
-      }
-  }
-
-  public static boolean f10(int num){
-    int a = 1;
-    int b = 1;
-    while (a<num){
-      if (a == num || b == num){
-        return true;
-      }
-      int next = a + b;
-      a = b;
-      b = next;
-    }
-    return false;
-  }
-
-
-  public static void f11(int num1, int num2) {
-    int y = 0;
-       for (int i = 0 ; i < num2; i++) {
-          y = y + num1;
-       }
-    System.out.println("The product between the numbers is:" + y);
-  }
-
-  public static void f12(int num) {
-      int x = num-1;
-      int base = num + x;
-      int center1 = base / 2;
-      int center2 = base / 2;
-      for (int i = 0; i < num; i++) {
-          for (int j = 0; j < base; j++) {
-              if (j >= center1 && j <= center2) {
-                  System.out.print("*");
-              } else {
-                  System.out.print(" ");
-              }
-          }
-          center1--;
-          center2++;
-          System.out.println();
-      }
-  }
-  public static void f13(int a1, int n, int d){
-        for (int i = 1; i <= n; i++){
-          int a = a1 + (i - 1) * d;
-          System.out.print(a + " ");;
+    public static void f9() {
+        int min = 100;
+        int max = 1;
+        Scanner scan = new Scanner(System.in);
+        for (int i = 1; i < 8; i++) {
+            System.out.println("Enter grade: ");
+            int grade = scan.nextInt();
+            if (grade > max) {
+                max = grade;
+            }
+            if (grade < min) {
+                min = grade;
+            }
         }
-    System.out.println();
-      }
-
-  public static void f14(int num1, int num2) {
-    System.out.println();
+        System.out.println("the highest grade is: " + max);
+        System.out.println("the lowest grade is: " + min);
     }
 
-  public static void f15(int num) {
-      for (int i = 1; i < num; i++) {
-          for (int j = 1; j < num + i ; j++) {
-            if (j < num - i){
-              System.out.print(" ");
+
+    public static boolean f10(int num){
+        int a = 1;
+        int b = 1;
+        while (a<num){
+            if (a == num || b == num){
+                return true;
             }
-            else{
-              System.out.print("*");
+            int next = a + b;
+            a = b;
+            b = next;
+        }
+        return false;
+    }
+
+
+    public static void f11(int num1, int num2) {
+        int y = 0;
+        for (int i = 0 ; i < num2; i++) {
+            y = y + num1;
+        }
+        System.out.println("The product between the numbers is:" + y);
+    }
+
+    public static void f12(int num) {
+        int x = num-1;
+        int base = num + x;
+        int center1 = base / 2;
+        int center2 = base / 2;
+        for (int i = 0; i < num; i++) {
+            for (int j = 0; j < base; j++) {
+                if (j >= center1 && j <= center2) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
             }
-          }
-      System.out.println();
-      }
-  }
-      
-  public static void f16(int num1, int mana){
-    for (int i = 1; i <= 11; i++){
-      int a = num1 + (i - 1) * mana;
-      System.out.print(a + " ");;
+            center1--;
+            center2++;
+            System.out.println();
+        }
     }
-  System.out.println();
-  }
-  public static void f17(int keren, int months){
-    int avg = keren/months;
-    double ribit = 0.5 * 100 / avg;
-    double avg_ribit = ribit + avg;
-    double sum1 = 0;
-    System.out.println("The average monthly mortgage is: " + avg_ribit);
-    for (int i = 1; i <= months; i++){
-      sum1+=avg_ribit;
+    public static void f13(int a1, int n, int d){
+        for (int i = 1; i <= n; i++){
+            int a = a1 + (i - 1) * d;
+            System.out.print(a + " ");;
+        }
+        System.out.println();
     }
-    {
-  System.out.println("The total mortgage paid is: " + sum1);
+
+    public static void f14(int num1, int num2) {
+        int index=3;
+        int x = 1;
+        int y = 2;
+        if (num1==1)
+            System.out.print(1+" ");
+        num2=num2+1;
+        while (index < num2) {
+            if ((index>num1)&&(index<num2))
+            {
+                System.out.print(x +" ");
+            }
+            int next = x + y;
+            x = y;
+            y = next;
+            index++;
+            if (num1!=1)
+                while (index < num2) {
+                    if ((index>num1)&&(index<num2))
+                    {
+                        System.out.print(x +" ");
+                    }
+                    int next1 = x + y;
+                    x = y;
+                    y = next1;
+                    index++;
+                }
+            System.out.println();
+        }
     }
-  }
-  public static void f18(int num){
-    while (num!=0){
-      if (num % 2 == 0){
-        System.out.print("0");
-      }else{
-        System.out.print("1");
-      }
-      num = num/2;
+    public static void f15(int num) {
+        for (int i = 1; i < num; i++) {
+            for (int j = 1; j < num + i ; j++) {
+                if (j < num - i){
+                    System.out.print(" ");
+                }
+                else{
+                    System.out.print("*");
+                }
+            }
+            System.out.println();
+        }
     }
-    System.out.println();
-  }
-  public static void f19(){
-    Scanner scan = new Scanner(System.in);
-    int beginning_point = 100;
-    int x1 = 0;
-    int y1 = 0;
-    for (int i = 1; i <= 5; i++){
-      System.out.println("Enter x: ");
-      int x2 = scan.nextInt();
-      System.out.println("Enter y: ");
-      int y2 = scan.nextInt();
-      System.out.println("(x,y) = (" + x2+ "," + y2 + ")"); 
-      int point = x2 + y2;
-      if(point < beginning_point)
-        beginning_point = point;
-        y1 = y2;
-        x1 = x2;
+
+    public static void f16(int num1, int mana){
+        for (int i = 1; i <= 11; i++){
+            int a = num1 + (i - 1) * mana;
+            System.out.print(a + " ");;
+        }
+        System.out.println();
     }
-    System.out.println("The closest point is: " + "("+ x1 + "," + y1 + ")");
+    public static void f17(int keren, int months){
+        int avg = keren/months;
+        double ribit = 0.5 * 100 / avg;
+        double avg_ribit = ribit + avg;
+        double sum1 = 0;
+        System.out.println("The average monthly mortgage is: " + avg_ribit);
+        for (int i = 1; i <= months; i++){
+            sum1+=avg_ribit;
+        }
+        {
+            System.out.println("The total mortgage paid is: " + sum1);
+        }
     }
-  public static void f20(){
-    Scanner scan = new Scanner(System.in);
-    int max1 = 0;
-    int max2 = 0;
-    String name1= "";
-    String name2 = "";
-    for (int i = 1; i <= 3; i++){
-      System.out.println("Enter your name: ");
-      String name = scan.next();
-      System.out.println("Enter your Math grade: ");
-      int math = scan.nextInt();
-      System.out.println("Enter your English grade: ");
-      int english = scan.nextInt();
-      if(math > max1){
-        max1 = math;
-        name1 = name;
-      }
-      if(english > max2){
-        max2 = english;
-        name2 = name;
-      }
+    public static void f18(int num) {
+        while (num != 0) {
+            if (num % 2 == 0) {
+                System.out.print(0);
+            } else {
+                System.out.print(1);
+            }
+            num = num/2;
+        }
+        System.out.println();
     }
-    System.out.println("The student with the highest Math grade is: " + name1);
-    System.out.println("The student with the highest English grade is: " + name2);
+    public static void f19() {
+        Scanner scan = new Scanner(System.in);
+        int beginning_point = 100;
+        int x1 = 0;
+        int y1 = 0;
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Enter x: ");
+            int x2 = scan.nextInt();
+            System.out.println("Enter y: ");
+            int y2 = scan.nextInt();
+            System.out.println("(x, y) = (" + x2 + "," + y2 + ")");
+            int point = x2 + y2;
+            if (point < beginning_point) {
+                beginning_point = point;
+                x1 = x2;
+                y1 = y2;
+            }
+        }
+
+        System.out.println("The closest point is: (" + x1 + "," + y1 + ")");
+    }
+
+    public static void f20(){
+        Scanner scan = new Scanner(System.in);
+        int max1 = 0;
+        int max2 = 0;
+        String name1= "";
+        String name2 = "";
+        for (int i = 1; i <= 3; i++){
+            System.out.println("Enter your name: ");
+            String name = scan.next();
+            System.out.println("Enter your Math grade: ");
+            int math = scan.nextInt();
+            System.out.println("Enter your English grade: ");
+            int english = scan.nextInt();
+            if(math > max1){
+                max1 = math;
+                name1 = name;
+            }
+            if(english > max2){
+                max2 = english;
+                name2 = name;
+            }
+        }
+        System.out.println("The student with the highest Math grade is: " + name1);
+        System.out.println("The student with the highest English grade is: " + name2);
     }
 
 
@@ -264,13 +295,13 @@ System.out.println("the lowest grade is: " + min);
         f9();
         f10(2);
         f11(2,5);
-        f12(5);    
+        f12(5);
         f13(2,5,3);
         f14(5,9);
         f15(5);
         f16(3,3);
         f17(1200,12);
-        f18(7);
+        f18(8);
         f19();
         f20();
     }
