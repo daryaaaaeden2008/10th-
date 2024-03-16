@@ -1,0 +1,191 @@
+
+import java.util.Scanner;
+public class shior4
+{
+    public static void main(String[] args)
+    {
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Enter name1: ");
+        String name1 =scan.next();
+        System.out.println("Enter name2: ");
+        String name2 =scan.next();
+        System.out.println("Enter name3: ");
+        String name3 =scan.next();
+        if ((name1.compareTo(name2)>0) && ((name2.compareTo(name3)>0)));
+        System.out.println(name1);
+        if ((name2.compareTo(name1)>0) && ((name1.compareTo(name3)>0)));
+        System.out.println(name2);
+        if ((name3.compareTo(name1)>0) && ((name2.compareTo(name1)>0)));
+        System.out.println(name3);
+        if ((name1.compareTo(name2)<0) && ((name2.compareTo(name3)>0)));
+        System.out.println(name1);
+        if ((name2.compareTo(name1)<0) && ((name1.compareTo(name3)>0)));
+        System.out.println(name2);
+        if ((name3.compareTo(name1)<0) && ((name2.compareTo(name1)>0)));
+        System.out.println(name3);
+    }
+}
+
+
+/*
+import java.util.Scanner;
+public class Main
+{
+ public static void main(String[] args)
+ {
+ Scanner scan=new Scanner(System.in);
+ System.out.println("enter scence: ");
+ String scence =scan.nextLine();
+ int len =scence.length();
+
+System.out.println(len);
+ }
+}
+*/
+
+/*
+import java.util.Scanner;
+public class Main
+{
+ public static void main(String[] args)
+ {
+ Scanner scan=new Scanner(System.in);
+ System.out.println("enter string: ");
+ String str =scan.nextLine();
+ char letter1=str.charAt(0);
+ char letter2=str.charAt(2);
+ if (letter1==letter2)
+    System.out.println("true");
+ else
+    System.out.println("false");
+ }
+}
+*/
+
+/*
+import java.util.Scanner;
+public class Main
+{
+ public static void main(String[] args)
+ {
+ Scanner scan=new Scanner(System.in);
+ System.out.println("enter string: ");
+ String str =scan.nextLine();
+ char letter1=str.charAt(0);
+ char letter2=str.charAt(1);
+ char letter3=str.charAt(2);
+   System.out.println(letter3+ ""+letter2+letter1);
+ }
+}
+*/
+
+/*
+import java.util.Scanner;
+public class Main
+{
+ public static void main(String[] args)
+ {
+ Scanner scan=new Scanner(System.in);
+ System.out.println("enter string: ");
+ String str =scan.nextLine();
+ char letter1=str.charAt(0);
+ char letter2=str.charAt(1);
+ char letter3=str.charAt(2);
+ char letter4=str.charAt(3);
+if (letter1== "o" || letter1=="e" || letter1=="i" || letter1=="u" || letter1=="a");
+   char letter1="*";
+if (letter2== "o" || letter2=="e" || letter2=="i" || letter2=="u" || letter2=="a");
+   char letter2="*";
+if (letter3== "o" || letter3=="e" || letter3=="i" || letter3=="u" || letter3=="a");
+  char letter3="*";
+if (letter4== "o" || letter4=="e" || letter4=="i" || letter4=="u" || letter4=="a");
+  char letter4="*";
+System.out.println(letter1+letter2+letter3+letter4);
+ }
+}
+*/
+
+/*
+import java.util.Scanner;
+public class Main
+{
+ public static void main(String[] args)
+ {
+ Scanner scan=new Scanner(System.in);
+  System.out.println("enter string: ");
+  int num =scan.nextInt();
+  Random r=new Random();
+  num=r.nextInt(100)+1;
+  if (num<10)
+   System.out.println("1");
+  if (num>10)
+   System.out.println("1");
+  if (num%2==0)
+    System.out.println("the number is divisible by 2");
+  if (num%3==0)
+   System.out.println("the number is divisible by 3");
+ }
+}
+*/
+
+
+/*
+import java.util.Scanner;
+public class Main
+{
+ public static void main(String[] args)
+ {
+  Scanner scan=new Scanner(System.in);
+  System.out.println("enter x1");
+  int x1=scan.nextInt();
+  System.out.println("enter y1");
+  int y1=scan.nextInt();
+  System.out.println("enter x2");
+  int x2=scan.nextInt();
+  System.out.println("enter y2");
+  int y2=scan.nextInt();
+  int x=(x1-x2);
+  int y=(y1-y2);
+  double g=Math.pow(x,2);
+  double h=Math.pow(y,2);
+  double sum=g+h;
+  System.out.println(Math.sqrt(sum));
+ }
+}
+*/
+
+/*
+import java.util.Scanner;
+public class Main
+{
+ public static void main(String[] args)
+ {
+  Scanner scan=new Scanner(System.in);
+  System.out.println("enter radios");
+  double radios=scan.nextInt();
+  double radios1=Math.pow(radios,2);
+  double area=3.14*radios1;
+  System.out.println(area);
+  double circumference=2*3.14*radios;
+  System.out.println(circumference);
+ }
+}
+*/
+
+/*
+import java.util.Scanner;
+public class Main
+{
+ public static void main(String[] args)
+ {
+  Scanner scan=new Scanner(System.in);
+  System.out.println("enter 1");
+  int num1=scan.nextInt();
+  System.out.println("enter 2");
+  int num2=scan.nextInt();
+  double number1=Math.pow(num1,2);
+  double number2=Math.pow(num2,2);
+  System.out.println(number1+number2);
+ }
+}
+*/
