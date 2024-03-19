@@ -1,0 +1,283 @@
+import java.util.Random;
+
+public class shior10 {
+    public static void f1(int arr1[], int index) {
+        if ((index >= 0) && (index < arr1.length)) {
+            if (arr1[index] % 2 != 0) {
+                arr1[index] = arr1[index] + 1;
+            }
+        } else {
+            System.out.println("Error!");
+        }
+    }
+
+    public static void f2(int arr2[]) {
+        int count = 0;
+        for (int i = 0; i < arr2.length; i++) {
+            count += arr2[i];
+        }
+        int average = count / arr2.length;
+        System.out.println(average);
+    }
+
+    public static void f3(int arr3[]) {
+        int max = 0;
+        int min = 100;
+        for (int i = 0; i < arr3.length; i++) {
+            if (arr3[i] > max) {
+                max = arr3[i];
+            }
+            if (arr3[i] < min) {
+                min = arr3[i];
+            }
+        }
+        System.out.println("the lowest grade is: " + min);
+        System.out.println("the highest grade is: " + max);
+    }
+
+    public static void f4(int arr4[]) {
+        for (int i = 0; i < arr4.length - 1; i++) {
+            if ((arr4[i] % 2 != 0) && (arr4[i + 1] % 2 != 0)) {
+                System.out.println(arr4[i] + " " + arr4[i + 1]);
+            }
+        }
+    }
+
+    public static boolean f5(int num) {
+        int[] arr5 = new int[10];
+        Random random = new Random();
+        for (int i = 0; i < arr5.length; i++) {
+            arr5[i] = random.nextInt(101);
+            for (int j = 0; j < arr5.length; j++) {
+                if (arr5[j] == num) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        }
+        return false;
+    }
+
+    public static void f6() {
+        int[] arr6 = new int[10];
+        Random random = new Random();
+        for (int i = 0; i < arr6.length; i++) {
+            arr6[i] = random.nextInt();
+        }
+        for (int i = 0; i < arr6.length - 1; i++) {
+            if ((arr6[i] % 2 != 0) && (arr6[i + 1] % 2 != 0)) {
+                System.out.println(arr6[i] + " " + arr6[i + 1]);
+            }
+        }
+    }
+
+    public static void f7() {
+        int[] arr7 = new int[10];
+        Random random = new Random();
+        int max = 0;
+        for (int i = 0; i < arr7.length; i++) {
+            arr7[i] = random.nextInt();
+        }
+
+        for (int i = 0; i < arr7.length; i++) {
+            if (arr7[i] > max) {
+                max = arr7[i];
+            } else {
+                System.out.print(arr7[i] + " ");
+            }
+        }
+        System.out.print(max);
+        System.out.println();
+    }
+    public static int f8(int[] arr8) {
+        for (int i = 0; i < arr8.length; i++) {
+            int leftSum = 0;
+            int rightSum = 0;
+
+            for (int j = 0; j < i; j++) {
+                leftSum += arr8[j];
+            }
+            for (int j = i + 1; j < arr8.length; j++) {
+                rightSum += arr8[j];
+            }
+
+            if (leftSum == rightSum) {
+                return i;
+            }
+        }
+        return -1;
+
+    }
+    public static void f9(String[] arr9, char letter) {
+        int sum_letter = 0;
+        for (int i = 0; i < arr9.length; i++) {
+            int size = arr9[i].length();
+            for (int index = 0; index < size; index++) {
+                char letter1 = arr9[i].charAt(index);
+                if (letter1 == letter) {
+                    sum_letter++;
+                }
+            }
+        }
+        System.out.println(sum_letter);
+    }
+
+
+    public static void f10(int arr10[], int num) {
+        int sum1 = 0;
+        for (int i = 0; i < arr10.length; i++) {
+            if (arr10[i] > num) {
+                sum1 += 1;
+            }
+        }
+        System.out.println("The number of cells larger than " + num + " is: " + sum1);
+    }
+
+    public static int f11(int arr11[]) {
+        int max = 0;
+        int max2 = 0;
+        int index = 0;
+        for (int i = 0; i < arr11.length; i++) {
+            if (arr11[i] > max) {
+                max = arr11[i];
+            } else {
+                for (int j = 0; j < arr11.length; j++) {
+                    if (arr11[j] != max && arr11[j] > max2) {
+                        max2 = arr11[j];
+                        index = j;
+                    }
+                }
+            }
+        }
+        return index;
+    }
+
+    public static void f12(int arr12[]) {
+        Random random = new Random();
+        int num = random.nextInt(101);
+        for (int j = 0; j < arr12.length; j++) {
+            System.out.print(arr12[j] + " ");
+        }
+        System.out.println(" ");
+        for (int i = 0; i < arr12.length; i++) {
+            if (arr12[i] != num) {
+                System.out.print(arr12[i] + " ");
+            }
+        }
+        System.out.println(" ");
+    }
+
+    public static void f13() {
+        int[] arr13 = new int[30];
+        int num1 = 0;
+        int num2 = 0;
+        int num3 = 0;
+        int num4 = 0;
+        int num5 = 0;
+        int num6 = 0;
+        int num7 = 0;
+        int num8 = 0;
+        int num9 = 0;
+        int num10 = 0;
+        Random random = new Random();
+        for (int i = 0; i < arr13.length; i++) {
+            arr13[i] = random.nextInt(1, 10);
+        }
+        for (int i = 0; i < arr13.length; i++) {
+            if (arr13[i] == 1)
+                num1 += 1;
+            if (arr13[i] == 2)
+                num2 += 1;
+            if (arr13[i] == 3)
+                num3 += 1;
+            if (arr13[i] == 4)
+                num4 += 1;
+            if (arr13[i] == 5)
+                num5 += 1;
+            if (arr13[i] == 6)
+                num6 += 1;
+            if (arr13[i] == 8)
+                num8 += 1;
+            if (arr13[i] == 9)
+                num9 += 1;
+            if (arr13[i] == 10)
+                num10 += 1;
+        }
+        System.out.print("the numbers that show twice: ");
+        if (num1 == 2)
+            System.out.print(" 1 ");
+        if (num2 == 2)
+            System.out.print(" 2 ");
+        if (num3 == 2)
+            System.out.print(" 3 ");
+        if (num4 == 2)
+            System.out.print(" 4 ");
+        if (num5 == 2)
+            System.out.print(" 5 ");
+        if (num6 == 2)
+            System.out.print(" 6 ");
+        if (num7 == 2)
+            System.out.print(" 7 ");
+        if (num8 == 2)
+            System.out.print(" 8 ");
+        if (num9 == 2)
+            System.out.print(" 9 ");
+        if (num10 == 2)
+            System.out.print(" 10 ");
+        System.out.println();
+    }
+
+    public static void f14() {
+        int[] arr14 = new int[10];
+        Random random = new Random();
+        for (int i = 0; i < arr14.length; i++) {
+            arr14[i] = random.nextInt(100) + 1;
+        }
+        for (int j = 0; j < arr14.length; j++) {
+            System.out.print(arr14[j] + " ");
+        }
+        System.out.println();
+        for (int x = arr14.length - 1; x >= 0; x--) {
+            System.out.print(arr14[x] + " ");
+        }
+        System.out.println();
+    }
+
+    public static boolean f15(int[] arr15) {
+        for (int j = 0; j < arr15.length/2; j++) {
+            if (arr15[j] != arr15[arr15.length-1-j]){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static void main(String[] args) {
+        int[] arr1 = {3, 2, 3, 4, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,};
+        f1(arr1, 9);
+        int[] arr2 = {100, 100, 100};
+        f2(arr2);
+        int[] arr3 = {100, 90, 80, 95};
+        f3(arr3);
+        int[] arr4 = {7, 9, 2, 8, 3, 9, 8, 10, 90, 87};
+        f4(arr4);
+        f5(50);
+        f6();
+        f7();
+        int[] arr8 = {4, -2, 3, 9, 8, -3};
+        f8(arr8);
+        String[] arr9 = {"aba", "sba", "ana"};
+        f9(arr9, 'a');
+        int arr10[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        f10(arr10, 5);
+        int arr11[] = {3, 8, 12, 9, 2};
+        f11(arr11);
+        int arr12[] = {10, 11,33, 59, 60, 65 ,81, 5, 96, };
+        f12(arr12);
+        f13();
+        f14();
+        int arr15[] = {1, 2, 3, 5, 2, 1};
+        f15(arr15);
+    }
+}
