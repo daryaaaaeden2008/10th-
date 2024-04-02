@@ -1,0 +1,27 @@
+public class ArithmeticProgression {
+    int firstMember;
+    int difference;
+    public ArithmeticProgression (int diff,int fm){
+        fm = firstMember;
+        diff = difference;
+    }
+    public void printGeneralSeries (){
+        System.out.println("a =" + firstMember + "+" + difference + "(n-1)" );
+    }
+    public int memberCalculation(int n){
+        int an = firstMember+difference*(n-1);
+        return an;
+    }
+
+    public int calculateN(int an){
+        double n = ((an-firstMember/ difference)+1);
+        int n1 = (int)n;
+        if (n1-n == 0){
+            return n1;
+        }
+        else{
+            return 0;
+        }
+    }
+
+}
